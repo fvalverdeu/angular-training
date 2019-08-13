@@ -1,0 +1,105 @@
+js no maneja hilos
+3 tipos renderizado
+server rendering se renderizan a nivel servidor java, .net
+client rendering angular
+pre rendering se genera el html en el server en modo de compilaci�n
+gabtsy hugo(go) ruby(?)
+no tienes facilidad para actualizarlo dinn�micamente.
+
+
+angular MVW model, view, whatever
+is modular
+FFVV
+modulos: unete, indicadores, reportes, valoraci�n crediticia..
+
+has dependency injection
+provide two-way databinding
+no dependencies whit another frameworks
+
+modulo
+representa funcionalidad del negocio
+xej app rutas desarrollo, unete, indicadores,...
+
+Los módulos pueden tener n componentes
+tienen un enrutador
+
+Han sido diseñados para ser reutilizables
+
+ventaja frente a lazy-loading, los componentes se van cargando mientras navego
+
+
+componentes
+los desarrollo que hagamos deben ser basados en componentes
+componente visual debe tener mínimo 3 propiedades
+states (interacciones con el usuario, estados x cambios de otros componentes), 
+properties (cambia el componente), template
+
+estilos: un comoponente debería tener un solo estilo
+el template es HTML con algunos tags de Angular como *ngFor, (click), etc...
+
+databinding
+enviar información desde el archivo js a la parte visual (properties) y desde la parte visual al archivo js (eventos).
+c-->dom {{value}}
+c--> dom(otro componente)[property="value"]
+dom-->c(event)="handler"
+c<-->dom[(ng-model)]="properties"(generalmente entre inputs)
+
+servicio
+componente que se encarga de manejar una funcionalidad común a otros componentes (funcionalidad del negocio).
+sesión, logs, etc...
+Maneja toda la lógica de negocio porque maneja la información que viene de fuera
+
+un servicio debe estar embebido dentro de un módulo y no se puede sacar
+los componentes sí se pueden sacar y poner en otros módulos.
+
+tiene 3 formas de inyectarse
+toda la app
+todo el módulo
+algunos componentes
+
+ejem serv venta neta sólo en componente de ventas
+ejem serv autentificación en toda la aplicación.
+
+enrutador
+
+Arquitectura
+def modulos
+def componente
+def servicios
+definir plantillas
+definir event binding.propertie bindigng
+def metadata
+def directivas ngFor, etc...
+
+comandos
+install
+npm i -g @angular/cli
+
+create
+ng new name-app
+
+start
+ng server
+
+test
+ng test
+
+Extensiones en navegador
+https://augury.angular.io/
+
+permite visualizar los componentes y el árbol de comoponentes
+
+editor en línea
+https://stackblitz.com/
+
+def 2 carpetas
+core de la aplicación: autentificación, login, header y footer
+shared: compartidos, aqui van los properties
+modules: todos los módulos
+
+https://github.com/ldiego73/angular-template
+
+https://github.com/ldiego73/node-api-template-koa
+
+
+

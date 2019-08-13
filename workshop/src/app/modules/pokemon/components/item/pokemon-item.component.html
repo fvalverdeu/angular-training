@@ -1,0 +1,11 @@
+<ng-template [ngIf]='result' [ngIfElse]='loading'>
+  <p>Pokemon #{{result.id}}</p>
+  <p>Nombre {{result.name}}</p>
+  <p>
+    <img src="{{result.id | pokemonImage}}" alt="">
+  </p>
+</ng-template>
+
+<ng-template #loading>
+  Cargando pokemon...
+</ng-template>
