@@ -1,4 +1,4 @@
-js no maneja hilos
+﻿js no maneja hilos
 3 tipos renderizado
 server rendering se renderizan a nivel servidor java, .net
 client rendering angular
@@ -100,6 +100,8 @@ modules: todos los módulos
 https://github.com/ldiego73/angular-template
 
 https://github.com/ldiego73/node-api-template-koa
+
+https://belcorp-taller-pokemon.s3-us-west-2.amazonaws.com/pokemones/${value}.svg
 
 
 
