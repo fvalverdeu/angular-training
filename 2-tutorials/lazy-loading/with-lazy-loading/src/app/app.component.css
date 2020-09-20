@@ -1,0 +1,63 @@
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #333;
+  color: white;
+  margin-bottom: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2 rem;
+  line-height: 1.6em;
+  padding: 2rem 0;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.4em;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .navigation ul li {
+    display: inline-block;
+  }
+
+    .navigation ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      transition: all 0.4 linear;
+      border-radius: 5px;
+    }
+
+      .navigation ul li a:hover {
+        background-color: #4a4a4a;
+      }
+
+.footer {
+  background: #f2f2f2;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}

@@ -1,0 +1,33 @@
+.main {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 1.2 rem;
+  line-height: 1.6em;
+  padding-top: 12rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.3em;
+  margin-bottom: 1.3em;
+}
+
+p {
+  margin-bottom: 1.6em;
+  /* text-align: justify; */
+}
+
+h1 {
+  color: #333;
+  font-size: 3em;
+}
+
+span {
+  color: #7c7a7a;
+}
